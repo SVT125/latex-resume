@@ -1,0 +1,201 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\ResumeAuthor}{James Hardjadinata}
+\newcommand{\ResumeTitle}{Resume}
+\newcommand{\ResumeNote}{Resume compiled on {\today}}
+\newcommand{\ResumeWebsite}{github.com/SVT125}
+\newcommand{\ResumeLinkedin}{linkedin.com/in/jameshardjadinata}
+\newcommand{\ResumeEmail}{jhardjadinata14@gmail.com}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\ResumeTitle},
+pdfauthor={\ResumeAuthor},
+pdfsubject={\ResumeWebsite},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\ResumeAuthor}
+\begin{SubTitle}
+(949)\,232-3835
+\par
+\href{mailto:\ResumeEmail}
+{\ResumeEmail}
+\,\textbullet\,
+\href{\ResumeLinkedin}
+{\url{\ResumeLinkedin}}\,
+\,\textbullet\,
+\href{\ResumeWebsite}
+{\url{\ResumeWebsite}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://uci.edu/}
+{\textbf{University of California, Irvine}},
+Irvine, CA
+\hfill
+\DatestampYMD{2014}{10}{23} --
+\DatestampYMD{2017}{03}{24}
+\Gap
+B.S., Computer Science, GPA 3.9\newline
+
+\Entry
+\href{http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-803&p_org_id=&lang=}
+{\textbf{Oracle Certified Associate, Java SE 7 Programmer}},
+Oracle Corporation
+\hfill
+\DatestampYMD{2013}{04}{30}
+\newline
+\Gap
+
+\hrule
+
+%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+\href{http://www.clustrix.com/}
+{\textbf{Software Test Engineer Intern at Clustrix}},
+San Francisco, CA
+\hfill
+\DatestampYMD{2016}{06}{27} --
+\DatestampYMD{2016}{08}{27}
+\Gap
+Wrote automated test cases (regression, stress, acceptance, etc.) in Python and bash involving extensive SQL/Clustrix-exclusive
+SQL; reported bugs and reviewed code for the next version release, especially relating to replication, rebalancing, user-level locks, and cluster reporting. Added features to internal code for both performance and QA
+testing. Responsible for knowledge of the product in assisting clients.\newline
+
+\Entry
+\href{http://www.theportal.io/}
+{\textbf{Software Development Intern at The Portal by K5 Ventures}},
+Irvine, CA
+\hfill
+\DatestampYMD{2015}{10}{20} --
+\DatestampYMD{2016}{06}{21}
+\Gap
+Developed native Android apps, MEAN stack RESTful web apps, and project consulting as a team lead/member, taking full
+responsibility for clients and their projects. Accounted for daily decision making and timely project delivery with Agile processes.\newline
+
+\hrule
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\begin{flushleft}
+\textbf{Programming Languages:} Java, C, C++, C\#, Python, HTML/CSS, Javascript
+\textbf{Technologies/Applications:} Linux, SQL, MongoDB, Node.js, Unity, Git, Mercurial\newline
+\end{flushleft}
+
+\hrule
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% PROJECTS & AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Projects \& Awards}
+{Projects \& Awards}
+{PDF:ProjectsAwards}
+
+\Entry
+\BulletItem
+\href{https://github.com/trizzle21/Datathon2016}
+{\textbf{CellTowers, Machine Learning Award @ UCI Mobile Data Science Hackathon (2016)}} -- Developed a Python application for visualizing cell tower data, predicting future data usage and other variables over time using PCA and Kalman filtering, and provides a heat map for potential optimization of tower signals. Worked on parsing and projecting the data, as well as applying PCA and creating the graphing utility using pandas and matplotlib.\newline
+
+\Entry
+\BulletItem
+\href{https://github.com/SVT125/HackUCI2015}
+{\textbf{Friendboard, HackUCI (2015)}} -- Created an Android app with teammates that gives a list of parsed speech phrases from the other person to play back after calling them. Utilizes the Microsoft Project Oxford speech recognition API and other APIs for audio normalization. Handled the Microsoft API and wrote all Android-related code, including integration of other tasks in the project e.g. pipelining the raw audio files to be trimmed then formatted.\newline
+
+\Entry
+\BulletItem
+\href{https://github.com/SVT125/GermanBridge}
+{\textbf{Card Suite (2015)}} -- Native Android app with a group of 3 which houses 3 card games (Hearts, Spades, and German Bridge) under a single app with simplicity and clean design; designed the game state structure, programmed the minimax socially-driven AI sourced from research papers, XML layout; wrote most backing code for functionality, and handled publishing process.\newline
+
+\Entry
+\BulletItem
+\href{https://github.com/brendonwai/PAS}
+{\textbf{Guesstimate, 1st place IEEE GameSig/Microsoft Imagine Cup Semifinalist (2014-2015)}} -- Participated in a group game jam and created a game in Unity/C\# that won 1st place against 30+ games from several universities for simplicity, marketability, and cost. Wrote the backing difficulty algorithm, class/prefab implementations.\newline
+
+\Entry
+\BulletItem
+{\textbf{Flashcards Lab Application (2014)}} -- Developed an Android lab for students to implement for a Java class at UCI, structured to cover basic Java syntax and OOP fundamentals; utilized various Android APIs and SQL deployed on an Amazon AWS server to store player statistics.\newline
+
+\Entry
+\BulletItem
+\href{https://github.com/SVT125/Research-CS199}
+{\textbf{Spiral Galaxy Research (2014)}} -- Group research for finding outliers in spiral galaxies, used Python + Java to retrieve the data values of thousands of galaxies and apply various mathematical/machine learning algorithms to determine the sets of variables that identified outlier galaxies; implemented the algorithms involved and some data parsing.\newline
+
+\Entry
+\BulletItem
+\href{https://www.hackerrank.com/contests/back2school14/challenges}
+{\textbf{HackerRank Back2School CodeSprint, Top 250 (2014)}} -- Placed in the top 250 for a collegiate HackerRank competition involving various coding challenges over 24 hours.\newline
+
+\end{Body}
+\end{document}
