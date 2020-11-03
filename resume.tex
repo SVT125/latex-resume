@@ -29,20 +29,20 @@
 
 % PDF settings and properties.
 \hypersetup{
-pdftitle={\ResumeTitle},
-pdfauthor={\ResumeAuthor},
-pdfsubject={\ResumeWebsite},
-pdfcreator={XeLaTeX},
-pdfproducer={},
-pdfkeywords={},
-unicode=true,
-bookmarks=true,
-bookmarksopen=true,
-pdfstartview=FitH,
-pdfpagelayout=OneColumn,
-pdfpagemode=UseOutlines,
-hidelinks,
-breaklinks}
+	pdftitle={\ResumeTitle},
+	pdfauthor={\ResumeAuthor},
+	pdfsubject={\ResumeWebsite},
+	pdfcreator={XeLaTeX},
+	pdfproducer={},
+	pdfkeywords={},
+	unicode=true,
+	bookmarks=true,
+	bookmarksopen=true,
+	pdfstartview=FitH,
+	pdfpagelayout=OneColumn,
+	pdfpagemode=UseOutlines,
+	hidelinks,
+	breaklinks}
 
 % Shorthand.
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
@@ -60,144 +60,141 @@ breaklinks}
 
 \Title{\ResumeAuthor}
 \begin{SubTitle}
-(949)\,232-3835
-\par
-\href{mailto:\ResumeEmail}
-{\ResumeEmail}
-\,\textbullet\,
-\href{\ResumeLinkedin}
-{\url{\ResumeLinkedin}}\,
-\,\textbullet\,
-\href{\ResumeWebsite}
-{\url{\ResumeWebsite}}
+	(949)\,232-3835
+	\par
+	\href{mailto:\ResumeEmail}
+	{\ResumeEmail}
+	\,\textbullet\,
+	\href{\ResumeLinkedin}
+	{\url{\ResumeLinkedin}}\,
+	\,\textbullet\,
+	\href{\ResumeWebsite}
+	{\url{\ResumeWebsite}}
 \end{SubTitle}
 
 \begin{Body}
 
-%%%%%%%%%%%%%%%%
-%% EXPERIENCE %%
-%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%
+	%% EXPERIENCE %%
+	%%%%%%%%%%%%%%%%
 
-\Section
-{Experience}
-{Experience}
-{PDF:Experience}
+	\Section
+	{Experience}
+	{Experience}
+	{PDF:Experience}
 
-\Entry
-\href{https://www.locationlabs.com/}
-{\textbf{Software Engineer at Avast}},
-Emeryville, CA
-\hfill
-\DatestampYMD{2017}{07}{05} --
-Present
-\Gap
-Currently working on backend systems, using Java and Python to create Docker-backed microservices and deploying them with Spinnaker and Kubernetes to AWS; I've worked extensively with other parts of AWS (e.g. S3, SNS/SQS, Route 53) as part of our backend. Responsible for designing several core components of the architecture, writing according automated tests, and overseeing the deployments through from dev to production.
-\newline
+	\Entry
+	\href{https://www.locationlabs.com/}
+	{\textbf{Software Engineer III at Avast}},
+	Emeryville, CA
+	\hfill
+	\DatestampYMD{2017}{07}{05} --
+	Present
+	\Gap
+	\BulletItem Developed backend Docker container-based microservices in Java/Python, with MySQL, Redis, and extensive use of AWS.
+	\BulletItem Also wrote automated tests, deployment pipelines w/ Spinnaker and Kubernetes, and infrastructure management w/ Terraform for the backend.
+	\BulletItem Responsible for full knowledge of the backend architecture to onboard new engineers, help make decisions to changes in feature flows, and to coordinate with project/product management.
+	\BulletItem Collaborated with product management to take ownership for and design new features in the backend, worked with other backend teams to consider scalability as well as frontend/client teams to communicate API flows and expectations.
+	\BulletItem Went overseas several times to help understand existing Avast architecture (w/ Scala, Cassandra, etc.) and integrate it with our set of products; was a continuous point of reference as we connected the two backend systems across all flavors of our products internationally.
+	\newline
 
-\Entry
-\href{http://www.clustrix.com/}
-{\textbf{Software Test Engineer Intern at Clustrix}},
-San Francisco, CA
-\hfill
-\DatestampYMD{2016}{06}{27} --
-\DatestampYMD{2016}{08}{27}
-\Gap
-Wrote automated test cases (regression, stress, acceptance, etc.) in Python and bash involving extensive SQL/Clustrix-exclusive
-SQL; reported bugs and reviewed code for the next version release, especially relating to replication, rebalancing, user-level locks, and cluster reporting. Added features to internal code for both performance and QA
-testing. Responsible for knowledge of the product in assisting clients.\newline
+	\Entry
+	\href{http://www.clustrix.com/}
+	{\textbf{Software Test Engineer Intern at Clustrix}},
+	San Francisco, CA
+	\hfill
+	\DatestampYMD{2016}{06}{27} --
+	\DatestampYMD{2016}{08}{27}
+	\Gap
+	\BulletItem Wrote automated test cases in Python and bash scripts involving extensive SQL/Clustrix-exclusive SQL.
+	\BulletItem Reported bugs and reviewed code for the next version release, especially for replication, rebalancing, user-level locks, and cluster reporting.
+	\BulletItem Added features to internal code for both performance and QA testing. 
+	\BulletItem Responsible for product knowledge to help troubleshoot and assist clients.
+	\newline
+	\Entry
+	\href{http://www.theportal.io/}
+	{\textbf{Software Development Intern at The Portal by K5 Ventures}},
+	Irvine, CA
+	\hfill
+	\DatestampYMD{2015}{10}{20} --
+	\DatestampYMD{2016}{06}{21}
+	\Gap
+	\BulletItem Developed native Android apps and MEAN stack web apps for startups.
+	\BulletItem Responsible as a team lead for daily decision making, project consultation and delivery with Agile.\newline
+	\hrule
 
-\Entry
-\href{http://www.theportal.io/}
-{\textbf{Software Development Intern at The Portal by K5 Ventures}},
-Irvine, CA
-\hfill
-\DatestampYMD{2015}{10}{20} --
-\DatestampYMD{2016}{06}{21}
-\Gap
-Developed native Android apps, MEAN stack web apps, and project consulting as a team lead/member, asserting full
-responsibility for client projects. Accounted for daily decision making and timely project delivery with Agile processes.\newline
+	%%%%%%%%%%%%%%%
+	%% EDUCATION %%
+	%%%%%%%%%%%%%%%
 
-\hrule
+	\Section
+	{Education}
+	{Education}
+	{PDF:Education}
 
-%%%%%%%%%%%%%%%
-%% EDUCATION %%
-%%%%%%%%%%%%%%%
+	\Entry
+	\href{https://uci.edu/}
+	{\textbf{University of California, Irvine}},
+	Irvine, CA
+	\hfill
+	\DatestampYMD{2014}{10}{23} --
+	\DatestampYMD{2017}{03}{24}
+	\Gap
+	B.S., Computer Science, GPA 3.9\newline
 
-\Section
-{Education}
-{Education}
-{PDF:Education}
+	\Entry
+	\href{http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-803&p_org_id=&lang=}
+	{\textbf{Oracle Certified Associate, Java SE 7 Programmer}},
+	Oracle Corporation
+	\hfill
+	\DatestampYMD{2013}{04}{30}
+	\newline
+	\Gap
 
-\Entry
-\href{https://uci.edu/}
-{\textbf{University of California, Irvine}},
-Irvine, CA
-\hfill
-\DatestampYMD{2014}{10}{23} --
-\DatestampYMD{2017}{03}{24}
-\Gap
-B.S., Computer Science, GPA 3.9\newline
+	\hrule
 
-\Entry
-\href{http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-803&p_org_id=&lang=}
-{\textbf{Oracle Certified Associate, Java SE 7 Programmer}},
-Oracle Corporation
-\hfill
-\DatestampYMD{2013}{04}{30}
-\newline
-\Gap
+	%%%%%%%%%%%%
+	%% SKILLS %%
+	%%%%%%%%%%%%
 
-\hrule
+	\Section
+	{Skills}
+	{Skills}
+	{PDF:Skills}
 
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
+	\begin{flushleft}
+		\textbf{Programming Languages:} Python, Java, C/C++, HTML/CSS, Javascript
+		\textbf{Technologies/Applications:} Ansible, AWS, Helm, Git, Hibernate, Spinnaker, 
+		Linux, Cassandra, MySQL, Swagger/OpenAPI for REST APIs, Kubernetes, Terraform \newline
+	\end{flushleft}
 
-\Section
-{Skills}
-{Skills}
-{PDF:Skills}
+	\hrule
 
-\begin{flushleft}
-\textbf{Programming Languages:} Python, Java, C, C++, HTML/CSS, Javascript
-\textbf{Technologies/Applications:} Ansible, AWS, Gradle, Helm, Git, Mercurial, Hibernate, Jenkins, 
-Linux, Cassandra, SQL, Swagger/OpenAPI, Kubernetes, Terraform \newline
-\end{flushleft}
+	%%%%%%%%%%%%%%%%%%%%%%%
+	%% PROJECTS & AWARDS %%
+	%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrule
+	\Section
+	{Projects \& Awards}
+	{Projects \& Awards}
+	{PDF:ProjectsAwards}
 
-%%%%%%%%%%%%%%%%%%%%%%%
-%% PROJECTS & AWARDS %%
-%%%%%%%%%%%%%%%%%%%%%%%
+	\Entry
+	\href{https://github.com/trizzle21/Datathon2016}
+	{\textbf{CellTowers, Machine Learning Award @ UCI Mobile Data Science Hackathon (2016)}} -- Developed a Python application for visualizing cell tower data, predicting data usage and other variables using PCA and Kalman filtering, and provides heat maps for optimization of tower signals. Worked on parsing and projecting the data, PCA, and graphing using pandas and matplotlib.\newline
 
-\Section
-{Projects \& Awards}
-{Projects \& Awards}
-{PDF:ProjectsAwards}
+	\Entry
+	\href{https://github.com/SVT125/HackUCI2015}
+	{\textbf{Friendboard, HackUCI (2015)}} -- Created an Android app that transcribes phone calls for playback. Used the Microsoft Project Oxford speech recognition API and other APIs for audio normalization. Wrote all of the Android code, handled the Microsoft API and component integration.\newline
 
-\Entry
-\BulletItem
-\href{https://github.com/trizzle21/Datathon2016}
-{\textbf{CellTowers, Machine Learning Award @ UCI Mobile Data Science Hackathon (2016)}} -- Developed a Python application for visualizing cell tower data, predicting data usage and other variables using PCA and Kalman filtering, and provides heat maps for optimization of tower signals. Worked on parsing and projecting the data, PCA, and graphing using pandas and matplotlib.\newline
+	\Entry
+	\href{https://github.com/brendonwai/PAS}
+	{\textbf{Guesstimate, 1st @ IEEE GameSig/Semifinalist @ Microsoft Imagine Cup (2014-2015)}} -- Created a Unity/C\# game in a game jam that won 1st place versus 30+ games for simplicity, marketability, and cost. Wrote its difficulty algorithm, class/prefab implementations.\newline
 
-\Entry
-\BulletItem
-\href{https://github.com/SVT125/HackUCI2015}
-{\textbf{Friendboard, HackUCI (2015)}} -- Created an Android app with teammates that transcribes speech phrases to play back after phone calls. Uses the Microsoft Project Oxford speech recognition API and other APIs for audio normalization. Wrote all of the Android code, and handled the Microsoft API as well as project component integration.\newline
-
-\Entry
-\BulletItem
-\href{https://github.com/brendonwai/PAS}
-{\textbf{Guesstimate, 1st @ IEEE GameSig/Semifinalist @ Microsoft Imagine Cup (2014-2015)}} -- Created a Unity/C\# game in a group game jam that won 1st place versus 30+ games from many universities for simplicity, marketability, and cost. Wrote its difficulty algorithm, class/prefab implementations.\newline
-
-\Entry
-\BulletItem
-{\textbf{Flashcards Lab (2014)}} -- Developed an Android lab for students to implement for a Java class at UCI, structured to cover basic Java syntax and OOP fundamentals; utilized various Android APIs and SQL deployed on AWS to store player statistics.\newline
-
-\Entry
-\BulletItem
-\href{https://github.com/SVT125/Research-CS199}
-{\textbf{Spiral Galaxy Research (2014)}} -- Group research for finding outliers in spiral galaxies, used Python/Java to parse thousands of galaxies and employ various mathematical/machine learning algorithms to determine the outliers; implemented the algorithms and data parsing.\newline
+	\Entry
+	\href{https://github.com/SVT125/Research-CS199}
+	{\textbf{Spiral Galaxy Research (2014)}} -- Group research for finding outliers in spiral galaxies, used Python/Java to parse hundreds of gigabytes of galaxies and used various mathematical/machine learning algorithms to determine outliers; implemented the algorithms and data parsing.\newline
 
 \end{Body}
 \end{document}
+
